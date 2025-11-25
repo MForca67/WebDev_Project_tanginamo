@@ -1,10 +1,45 @@
 
-@media (min-width: 768px) {
-  .header {grid-area: 1 / span 6;}
-  .menu {grid-area: 2 / span 1;}
-  .content {grid-area: 2 / span 4;}
-  .facts {grid-area: 2 / span 1;}
-  .footer {grid-area: 3 / span 6;}
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .form-control {
+        left: 0;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .products-row {
+        justify-content: center;
+        gap: 15px;
+    }
+    .products-row img {
+        width: 180px;
+        height: 180px;
+    }
+    .image-item p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+    nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .products-row img {
+        width: 140px;
+        height: 140px;
+    }
 }
 
 body { 
@@ -51,6 +86,7 @@ input[type="text"]::placeholder {
 	gap: 20px;
 	border-radius: 24px;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .products-row img {
@@ -85,6 +121,7 @@ input[type="text"]::placeholder {
 }
 
 header {
+	flex-wrap: wrap;
 	background-color: #333;
 	color: #fff;
 	padding: 10px 20px;
