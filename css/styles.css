@@ -1,4 +1,12 @@
 
+@media (min-width: 768px) {
+  .header {grid-area: 1 / span 6;}
+  .menu {grid-area: 2 / span 1;}
+  .content {grid-area: 2 / span 4;}
+  .facts {grid-area: 2 / span 1;}
+  .footer {grid-area: 3 / span 6;}
+}
+
 body { 
 	font-family: Comic Sans MS, sans-serif;
 	margin: 0;
@@ -38,12 +46,26 @@ input[type="text"]::placeholder {
 	border: 3px solid #333;
 }
 
+.products-row {
+	display: flex;
+	gap: 20px;
+	border-radius: 24px;
+	justify-content: center;
+}
+
+.products-row img {
+	border-radius: 32px;
+	width: 260px;
+	height: 260px;
+	border: 3px solid #333;
+}
+
 .image-item {
 	text-align: center;
 }
 
 .image-item p {
-	margin-top: 1px;
+	margin-top: 10px;
 }
 
 .image-border {
@@ -56,6 +78,7 @@ input[type="text"]::placeholder {
 	display: block;
 	width: 100%;
 	position: relative;
+	left: 57px;
 	padding: 10px 20px;
 	background-color: #495057;
 	border-radius: 32px;
