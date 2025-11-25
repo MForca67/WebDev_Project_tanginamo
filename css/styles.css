@@ -11,6 +11,10 @@ body {
     position: relative;
 }
 
+input[type="text"] {
+  color: rgb(255, 255, 255);
+}
+
 ::placeholder {
   color: whitesmoke;
   opacity: 1;
@@ -164,4 +168,5 @@ h1 {
 
 .button:hover {
 	background-color: #777;
+
 }
