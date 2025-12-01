@@ -58,6 +58,10 @@ input[type="text"] {
   color: rgb(255, 255, 255);
 }
 
+input[type="contacts"] {
+  color: black;
+}
+
 ::placeholder {
   color: whitesmoke;
   opacity: 1;
@@ -230,5 +234,6 @@ h1 {
 .button:hover {
 	background-color: #777;
 }
+
 
 
